@@ -23,8 +23,6 @@
 		65313BA217C14C9400EC5976 /* TTTableSubtitleItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 65313BA017C14C9300EC5976 /* TTTableSubtitleItem.m */; };
 		65313BA517C14CCD00EC5976 /* TTTableTextItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 65313BA317C14CCD00EC5976 /* TTTableTextItem.h */; };
 		65313BA617C14CCD00EC5976 /* TTTableTextItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 65313BA417C14CCD00EC5976 /* TTTableTextItem.m */; };
-		65313BA917C14CEF00EC5976 /* TTTableTextItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 65313BA717C14CEF00EC5976 /* TTTableTextItem.h */; };
-		65313BAA17C14CEF00EC5976 /* TTTableTextItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 65313BA817C14CEF00EC5976 /* TTTableTextItem.m */; };
 		65313BAD17C14E2C00EC5976 /* TTTableLinkedItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 65313BAB17C14E2C00EC5976 /* TTTableLinkedItem.h */; };
 		65313BAE17C14E2C00EC5976 /* TTTableLinkedItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 65313BAC17C14E2C00EC5976 /* TTTableLinkedItem.m */; };
 		65913ADA17C22E1100FA0316 /* TTTableViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 65913AD617C22E1100FA0316 /* TTTableViewDelegate.h */; };
@@ -254,8 +252,6 @@
 		65313BA017C14C9300EC5976 /* TTTableSubtitleItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTableSubtitleItem.m; sourceTree = "<group>"; };
 		65313BA317C14CCD00EC5976 /* TTTableTextItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTableTextItem.h; sourceTree = "<group>"; };
 		65313BA417C14CCD00EC5976 /* TTTableTextItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTableTextItem.m; sourceTree = "<group>"; };
-		65313BA717C14CEF00EC5976 /* TTTableTextItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTableTextItem.h; sourceTree = "<group>"; };
-		65313BA817C14CEF00EC5976 /* TTTableTextItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTableTextItem.m; sourceTree = "<group>"; };
 		65313BAB17C14E2C00EC5976 /* TTTableLinkedItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTableLinkedItem.h; sourceTree = "<group>"; };
 		65313BAC17C14E2C00EC5976 /* TTTableLinkedItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTableLinkedItem.m; sourceTree = "<group>"; };
 		65913AD617C22E1100FA0316 /* TTTableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTableViewDelegate.h; sourceTree = "<group>"; };
@@ -728,8 +724,6 @@
 				65313B9017C149AD00EC5976 /* TTTableItem.m */,
 				65313BA317C14CCD00EC5976 /* TTTableTextItem.h */,
 				65313BA417C14CCD00EC5976 /* TTTableTextItem.m */,
-				65313BA717C14CEF00EC5976 /* TTTableTextItem.h */,
-				65313BA817C14CEF00EC5976 /* TTTableTextItem.m */,
 				65313BAB17C14E2C00EC5976 /* TTTableLinkedItem.h */,
 				65313BAC17C14E2C00EC5976 /* TTTableLinkedItem.m */,
 				65313B9F17C14C9300EC5976 /* TTTableSubtitleItem.h */,
@@ -948,7 +942,6 @@
 				65313B9D17C14B7300EC5976 /* TTTableViewController.h in Headers */,
 				65313BA117C14C9400EC5976 /* TTTableSubtitleItem.h in Headers */,
 				65313BA517C14CCD00EC5976 /* TTTableTextItem.h in Headers */,
-				65313BA917C14CEF00EC5976 /* TTTableTextItem.h in Headers */,
 				65313BAD17C14E2C00EC5976 /* TTTableLinkedItem.h in Headers */,
 				65913ADA17C22E1100FA0316 /* TTTableViewDelegate.h in Headers */,
 				65913ADC17C22E1100FA0316 /* TTTableViewVarHeightDelegate.h in Headers */,
@@ -1103,7 +1096,6 @@
 				65313B9E17C14B7300EC5976 /* TTTableViewController.m in Sources */,
 				65313BA217C14C9400EC5976 /* TTTableSubtitleItem.m in Sources */,
 				65313BA617C14CCD00EC5976 /* TTTableTextItem.m in Sources */,
-				65313BAA17C14CEF00EC5976 /* TTTableTextItem.m in Sources */,
 				65313BAE17C14E2C00EC5976 /* TTTableLinkedItem.m in Sources */,
 				65913ADB17C22E1100FA0316 /* TTTableViewDelegate.m in Sources */,
 				65913ADD17C22E1100FA0316 /* TTTableViewVarHeightDelegate.m in Sources */,

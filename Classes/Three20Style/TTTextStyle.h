@@ -27,10 +27,10 @@
   CGFloat   _minimumFontSize;
   NSInteger _numberOfLines;
 
-  UITextAlignment                   _textAlignment;
+  NSTextAlignment                   _textAlignment;
   UIControlContentVerticalAlignment _verticalAlignment;
 
-  UILineBreakMode _lineBreakMode;
+  NSLineBreakMode _lineBreakMode;
 }
 
 @property (nonatomic, retain) UIFont*   font;
@@ -42,16 +42,16 @@
 @property (nonatomic)         CGFloat   minimumFontSize;
 @property (nonatomic)         NSInteger numberOfLines;
 
-@property (nonatomic)         UITextAlignment                   textAlignment;
+@property (nonatomic)         NSTextAlignment                   textAlignment;
 @property (nonatomic)         UIControlContentVerticalAlignment verticalAlignment;
 
-@property (nonatomic)         UILineBreakMode lineBreakMode;
+@property (nonatomic)         NSLineBreakMode lineBreakMode;
 
 + (TTTextStyle*)styleWithFont:(UIFont*)font next:(TTStyle*)next;
 + (TTTextStyle*)styleWithColor:(UIColor*)color next:(TTStyle*)next;
 + (TTTextStyle*)styleWithFont:(UIFont*)font color:(UIColor*)color next:(TTStyle*)next;
 + (TTTextStyle*)styleWithFont:(UIFont*)font color:(UIColor*)color
-                textAlignment:(UITextAlignment)textAlignment next:(TTStyle*)next;
+                textAlignment:(NSTextAlignment)textAlignment next:(TTStyle*)next;
 + (TTTextStyle*)styleWithFont:(UIFont*)font color:(UIColor*)color
                   shadowColor:(UIColor*)shadowColor shadowOffset:(CGSize)shadowOffset
                          next:(TTStyle*)next;
@@ -62,9 +62,9 @@
 + (TTTextStyle*)styleWithFont:(UIFont*)font color:(UIColor*)color
               minimumFontSize:(CGFloat)minimumFontSize
                   shadowColor:(UIColor*)shadowColor shadowOffset:(CGSize)shadowOffset
-                textAlignment:(UITextAlignment)textAlignment
+                textAlignment:(NSTextAlignment)textAlignment
             verticalAlignment:(UIControlContentVerticalAlignment)verticalAlignment
-                lineBreakMode:(UILineBreakMode)lineBreakMode numberOfLines:(NSInteger)numberOfLines
+                lineBreakMode:(NSLineBreakMode)lineBreakMode numberOfLines:(NSInteger)numberOfLines
                          next:(TTStyle*)next;
 
 @end

@@ -26,7 +26,6 @@
 /**
  * Additions.
  */
-TT_FIX_CATEGORY_BUG(UIImageAdditions)
 
 @implementation UIImage (TTCategory)
 

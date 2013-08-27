@@ -172,7 +172,6 @@
 /**
  * Additions.
  */
-TT_FIX_CATEGORY_BUG(UIViewAdditions)
 
 @implementation UIView (TTCategory)
 

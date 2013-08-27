@@ -110,7 +110,6 @@ void HSVtoRGB( float *r, float *g, float *b, float h, float s, float v ) {
 /**
  * Additions.
  */
-TT_FIX_CATEGORY_BUG(UIColorAdditions)
 
 @implementation UIColor (TTCategory)
 

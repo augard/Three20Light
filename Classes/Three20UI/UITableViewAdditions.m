@@ -29,7 +29,6 @@
 /**
  * Additions.
  */
-TT_FIX_CATEGORY_BUG(UITableViewAdditions)
 
 @implementation UITableView (TTCategory)
 

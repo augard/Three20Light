@@ -27,7 +27,6 @@
 /**
  * Additions.
  */
-TT_FIX_CATEGORY_BUG(NSDateAdditions)
 
 @implementation NSDate (TTCategory)
 

@@ -28,7 +28,7 @@
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-void RGBtoHSV(float r, float g, float b, float* h, float* s, float* v) {
+void RGBtoHSV(CGFloat r, CGFloat g, CGFloat b, CGFloat* h, CGFloat* s, CGFloat* v) {
   float min, max, delta;
   min = MIN3(r, g, b);
   max = MAX3(r, g, b);
@@ -55,7 +55,7 @@ void RGBtoHSV(float r, float g, float b, float* h, float* s, float* v) {
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-void HSVtoRGB( float *r, float *g, float *b, float h, float s, float v ) {
+void HSVtoRGB( CGFloat *r, CGFloat *g, CGFloat *b, CGFloat h, CGFloat s, CGFloat v ) {
   int i;
   float f, p, q, t;
   if ( s == 0 ) {

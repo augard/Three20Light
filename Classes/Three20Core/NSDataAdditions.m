@@ -35,7 +35,7 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (NSString*)md5Hash {
   unsigned char result[CC_MD5_DIGEST_LENGTH];
-  CC_MD5([self bytes], [self length], result);
+  CC_MD5([self bytes], (CC_LONG)[self length], result);
 
   return [NSString stringWithFormat:
     @"%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x",
@@ -48,7 +48,7 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (NSString*)sha1Hash {
   unsigned char result[CC_SHA1_DIGEST_LENGTH];
-  CC_SHA1([self bytes], [self length], result);
+  CC_SHA1([self bytes], (CC_LONG)[self length], result);
 
   return [NSString stringWithFormat:
     @"%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x",

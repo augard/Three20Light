@@ -49,7 +49,7 @@
     _numberOfLines = 1;
     _textAlignment = NSTextAlignmentCenter;
     _verticalAlignment = UIControlContentVerticalAlignmentCenter;
-    _lineBreakMode = UILineBreakModeTailTruncation;
+    _lineBreakMode = NSLineBreakByTruncatingTail;
   }
 
   return self;

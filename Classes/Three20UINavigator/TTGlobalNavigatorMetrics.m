@@ -40,7 +40,7 @@ CGFloat TTKeyboardHeight() {
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 CGRect TTScreenBounds() {
   CGRect bounds = [UIScreen mainScreen].bounds;
-  if (UIInterfaceOrientationIsLandscape(TTInterfaceOrientation())) {
+  if (TTOSVersion() < 8 && UIInterfaceOrientationIsLandscape(TTInterfaceOrientation())) {
     CGFloat width = bounds.size.width;
     bounds.size.width = bounds.size.height;
     bounds.size.height = width;

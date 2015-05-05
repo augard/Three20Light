@@ -351,7 +351,7 @@ static const CGFloat kFrameDuration = 1.0/40.0;
   }
 
   NSInteger indexDiff = pageIndex - baseIndex;
-  if (fabs(indexDiff) > kOffscreenPages) {
+  if (labs(indexDiff) > kOffscreenPages) {
     return kInvalidIndex;
   }
 
@@ -498,7 +498,7 @@ static const CGFloat kFrameDuration = 1.0/40.0;
 
   NSInteger indexDiff = pageIndex - _centerPageIndex;
   if (indexDiff) {
-    if (fabs(indexDiff) <= kOffscreenPages) {
+    if (labs(indexDiff) <= kOffscreenPages) {
       if (indexDiff > 0) {
         NSInteger edgeIndex = _centerPageIndex - kOffscreenPages;
         NSInteger newEdgeIndex = pageIndex - kOffscreenPages;
@@ -1206,7 +1206,7 @@ static const CGFloat kFrameDuration = 1.0/40.0;
   _pageEdges = newEdges; [self setNeedsLayout];
 
   // Neligible speed, stop.
-  if (abs(_inertiaSpeed.x) < 0.05 && abs(_inertiaSpeed.y) < 0.05) {
+  if (fabs(_inertiaSpeed.x) < 0.05 && fabs(_inertiaSpeed.y) < 0.05) {
     // Stop animator.
     [self stopAnimation:NO];
 
@@ -1550,7 +1550,7 @@ static const CGFloat kFrameDuration = 1.0/40.0;
         // The scroll view will continue to move a short distance afterwards.
         // If are zoomed, will still moving after stop drag. Short distance, doesn't animate.
         if (_touchCount == 0 && self.scrollEnabled
-            && self.zoomed && abs(_inertiaSpeed.x) >= 1 && abs(_inertiaSpeed.y) >= 1) {
+            && self.zoomed && fabs(_inertiaSpeed.x) >= 1 && fabs(_inertiaSpeed.y) >= 1) {
           // Increase speed. (Longer residual movement).
           _inertiaSpeed.x *= kIncreaseSpeed;
           _inertiaSpeed.y *= kIncreaseSpeed;

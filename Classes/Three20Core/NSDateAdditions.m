@@ -87,7 +87,7 @@
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (NSString*)formatShortTime {
-  NSTimeInterval diff = abs([self timeIntervalSinceNow]);
+  NSTimeInterval diff = fabs([self timeIntervalSinceNow]);
 
   if (diff < TT_DAY) {
     return [self formatTime];
@@ -115,7 +115,7 @@
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (NSString*)formatDateTime {
-  NSTimeInterval diff = abs([self timeIntervalSinceNow]);
+  NSTimeInterval diff = fabs([self timeIntervalSinceNow]);
   if (diff < TT_DAY) {
     return [self formatTime];
 
@@ -203,7 +203,7 @@
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (NSString*)formatShortRelativeTime {
-  NSTimeInterval elapsed = abs([self timeIntervalSinceNow]);
+  NSTimeInterval elapsed = fabs([self timeIntervalSinceNow]);
 
   if (elapsed < TT_MINUTE) {
     return TTLocalizedString(@"<1m", @"Date format: less than one minute ago");

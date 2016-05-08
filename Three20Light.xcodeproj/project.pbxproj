@@ -974,7 +974,7 @@
 		804A5C261391A32F00ADF437 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0700;
 			};
 			buildConfigurationList = 804A5C291391A32F00ADF437 /* Build configuration list for PBXProject "Three20Light" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1108,6 +1108,7 @@
 		804A5C371391A32F00ADF437 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
